@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: klausur-deployment
+  labels:
+    app: klausur
+spec:
+  selector:
+    matchLabels:
+      app: klausur
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: klausur
+    spec:
+      containers:
+      - name: klausur
+        image: ghcr.io/ci-cd-2024-dhbw-hdh/marco.peteler/klausur:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: regcred

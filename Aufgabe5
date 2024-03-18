@@ -1,0 +1,12 @@
+Ein Deployment hat den Vorteil:
+    erfordern die wenigsten Konfigurationsdaten und den geringsten Einrichtungsaufwand und können zentral verwatltet werden
+    Es kann scaliert werden
+
+Kubernetes Service:
+    zur internen Lastverteilung über virtuelle IP, welche auf einen oder mehrere Pods verweist. 
+    Pods von Außerhalb zu erreichen
+
+Wege wie man eine Kubernetes Anwendung von außen erreichen kann:
+    Nodeport
+    Ingress
+    Loadbalancer

@@ -1,0 +1,2 @@
+
+Job im Kubernetes-Umfeld: Ein Steuerobjekt, das die Ausführung einer bestimmten Aufgabe bis zu ihrem erfolgreichen Abschluss sichert, indem es Pods verwaltet und neu startet, falls diese fehlschlagen.

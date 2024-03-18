@@ -33,6 +33,8 @@ jobs:
         cache: 'npm'
     - name: install deps
       run: npm ci
+#    - name: eslint check
+#      run: npm run lint
     - name: run test
       run: npm run test
   
